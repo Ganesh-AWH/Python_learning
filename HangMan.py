@@ -109,9 +109,7 @@ while not game_over:
     if(not found_correct):
         lives -= 1
     
-    print(f"Guessed letters: {display}")
     
-    print(HANGMANPICS[hang_length - lives])
     
     if '-' not in display:
         game_over = True
@@ -122,5 +120,8 @@ while not game_over:
         print("*******************You are out of lives and You lose!*******************")
         print("Game over")
         break
+    
+    print(f"Guessed letters: {display}")
+    print(HANGMANPICS[hang_length - lives])
         
     print(f"*******************number of lives remaining: {lives}/{total_lives}*******************")
