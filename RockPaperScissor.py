@@ -34,7 +34,7 @@ player_choice = int(input("What do you choose? Type 0 for Rock, 1 for paper and 
 if(player_choice>=0 and player_choice<=2):
     print(f"player choice: \n {games_images[player_choice]}")
 
-
+#print computer game image
 computer_choice = random.randint(0, 2)
 print(f"Computer choice: \n{games_images[computer_choice]}")
 
@@ -43,7 +43,7 @@ print(f"Computer choice: \n{games_images[computer_choice]}")
 if(player_choice<0 or player_choice>=3):
     print("You type invalid number, You lose")
 
-elif(player_choice == 0 and player_choice == 2):
+elif(player_choice == 0 and computer_choice == 2):
     print("You win")
 elif(player_choice == 2 and computer_choice == 0):
     print("You lose")
