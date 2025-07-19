@@ -31,9 +31,9 @@ while(True):
 
     if option == "encode":
         enc_res = cesar(text, shift, option)
-        print(enc_res)
+        print(f"Here is the encoded result for {text}: {enc_res}")
     elif option == "decode":
         dec_res = cesar(text, shift, option)
-        print(dec_res)
+        print(f"Here is the decoded result for {text}: {dec_res}")
     else:
         print("Invalid text")
