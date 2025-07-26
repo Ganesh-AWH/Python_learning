@@ -1,5 +1,4 @@
-for i in list_char:
-#     if i == guess_letter:
-#         print("Right")
-#     else:
-#         print("Wrong")
+   # if(amount < drink["cost"]):
+    #     print("You don't have enough amount, amount refunded")
+    # else:
+    #     print("correct amount")
