@@ -19,7 +19,7 @@ def draw_spirograph(size_of_gap):
         tut.circle(100)
         tut.setheading(tut.heading() + size_of_gap)
 
-draw_spirograph(2)
+draw_spirograph(10)
 
 sc = Screen()
 sc.exitonclick()
