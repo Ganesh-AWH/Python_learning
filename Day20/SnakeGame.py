@@ -1,6 +1,7 @@
 from turtle import Screen
 from snake import Snake
 from food import Food
+from scorecard import Score_card
 import time
 
 screen = Screen()
@@ -11,11 +12,10 @@ screen.title("Snake Game")
 screen.bgcolor("black")
 
 snake = Snake()
+food = Food()
+score = Score_card()
 
 screen.listen()
-food = Food()
-
-
 screen.onkey(key="Up", fun=snake.move_up)
 screen.onkey(key="Down", fun=snake.move_down)
 screen.onkey(key="Left", fun=snake.move_left)
@@ -31,5 +31,6 @@ while is_game_on:
     #detecting collision with food
     if snake.head.distance(food) < 15:
         food.refresh()
+        score.update_score()
     
 screen.exitonclick()
