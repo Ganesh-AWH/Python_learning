@@ -11,8 +11,8 @@ screen.title("ping pong")
 screen.tracer(0)
 
 
-l_paddle = Paddle((-375, 0))
-r_paddle = Paddle((375, 0))
+l_paddle = Paddle((-380, 0))
+r_paddle = Paddle((380, 0))
 ball = Ball()
 
 
@@ -31,7 +31,7 @@ while is_game_on:
     ball.move()
 
     #Detecting collision with wall
-    if ball.ycor() > 275 or ball.ycor() < -275:
+    if ball.ycor() > 280 or ball.ycor() < -280:
         #call bounce logic
         ball.bounce_y()    
     
@@ -43,11 +43,6 @@ while is_game_on:
     #Detect R paddle misses
     if ball.xcor() > 380:
         ball.reset_position()
-    
-    #Detect L paddle misses
-    if ball.xcor() < -380:
-        ball.reset_position()
-    
     
 screen.exitonclick()
 
