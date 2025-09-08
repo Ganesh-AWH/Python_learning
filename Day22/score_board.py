@@ -10,8 +10,17 @@ class Scoreboard(Turtle):
         self.color("white")
         self.penup()
         self.hideturtle()
+        self.update_score()
+        
+    def update_score(self):
+        self.clear()
         self.goto(-280, 260)
         self.write(f"Level: {self.level}", align="left", font=FONT)
+    
+    def increase_level(self):
+        self.level += 1
+        self.update_score()
+    
     
     def game_over(self):
         self.goto(0, 0)
