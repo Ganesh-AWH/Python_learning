@@ -19,11 +19,10 @@ scoreboard = ScoreBoard()
 
 
 screen.listen()
-screen.onkey(key="Up", fun=l_paddle.go_up)
-screen.onkey(key="Down", fun=l_paddle.go_down)
-
-screen.onkey(key="w", fun=r_paddle.go_up)
-screen.onkey(key="s", fun=r_paddle.go_down)
+screen.onkeypress(key="Up", fun=l_paddle.go_up)
+screen.onkeypress(key="Down", fun=l_paddle.go_down)
+screen.onkeypress(key="w", fun=r_paddle.go_up)
+screen.onkeypress(key="s", fun=r_paddle.go_down)
 
 
 is_game_on = True
