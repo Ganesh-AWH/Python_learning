@@ -13,3 +13,8 @@ with open("Day24\Input\Letters\starting_letter.txt") as letter_file:
         new_letter = letter_content.replace(PLACE_HOLDER, striped_name)
         with open(f"Day24\Output\ReadyToSend\{striped_name}.txt", "w") as output:
             output.write(new_letter)
+
+
+
+
+
