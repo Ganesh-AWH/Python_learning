@@ -23,11 +23,8 @@ while len(guessed_states) < 50:
     answer = screen.textinput(title=f"{len(guessed_states)}/ 50 correct", prompt="what's another state's name?").title()
     
     if answer == "Exit":
-        missed_states = []
-        for state in all_states:
-            if state not in guessed_states:
-                missed_states.append(state)
-        
+        #conditional list comprehension
+        missed_states = [state for state in all_states if state not in guessed_states]
         #taking the missing values list to new csv file  "states to learn.csv"
         new_data = pd.DataFrame(missed_states)
         new_data.to_csv(r"Day25\US States game\states to learn.csv")
