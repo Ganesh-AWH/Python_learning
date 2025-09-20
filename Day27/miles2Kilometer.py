@@ -7,7 +7,7 @@ def milles_to_km():
 
 window = Tk()
 window.title("Miles to kilometer converter")
-window.config(padx=20, pady=20)
+window.config(padx=70, pady=30)
 
 miles_input = Entry(width=7)
 miles_input.grid(row=0, column=1)
