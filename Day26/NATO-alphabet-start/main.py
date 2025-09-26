@@ -11,5 +11,5 @@ code = {row.letter: row.code for (index, row) in df.iterrows()}
 
 #TODO 2. Create a list of the phonetic code words from a word that the user inputs.
 word = input("Enter a word: ")
-phonetic_code = [code[letter.upper()] for letter in word if letter in code]
+phonetic_code = [code[letter.upper()] for letter in word]
 print(phonetic_code)
