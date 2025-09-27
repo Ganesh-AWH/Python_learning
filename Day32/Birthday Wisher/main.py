@@ -19,6 +19,7 @@ PASSWORD = "bsdx mxcb rkvn hxhm"
 
 
 #Extrcting birthdays from csv as list of dictionary
+
 df = pd.read_csv(r"E:\Programming\Python\Udemy Course\Day32\Birthday Wisher\birthdays.csv")
 birthdays_dict = df.to_dict(orient="records")
 
