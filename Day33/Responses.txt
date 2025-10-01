@@ -1,0 +1,6 @@
+Responsse code
+1XX : Hold on (process is going on)
+2XX : Here you go (the request data is fetched without any error)
+3XX : Go away (you don't have permission to access)
+4XX : You screwed up (the request thing is doesn't exist)
+5XX : some other problem
